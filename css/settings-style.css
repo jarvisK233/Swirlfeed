@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: #eeeeee;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+hr{
+    margin: 20px 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+header {
+    background-color: deepskyblue;
+    border-bottom: 5px solid #2980b9;
+}
+
+header nav, header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    padding: 20px 10px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+
+}
+
+header nav ul li a:hover {
+    border-bottom: 3px solid #ffffff;
+}
+
+header nav h1 a{
+    color: #2980b9;
+    font-family: "Bungee", sans-serif;
+}
+
+header nav input[type="text"] {
+    width: 280px;
+    height: 40px;
+    padding-left: 5px;
+}
+
+header nav button {
+    height: 40px;
+    margin-top: 13px;
+    width: 40px;
+    background-color: #eeeeee;
+    border: 0;
+    cursor: pointer;
+}
+
+.main-content {
+    width: 70%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px #dedcdc;
+}
+
+.main-content h3 {
+    margin: 20px 0;
+}
+
+.main-content input[type='submit'] {
+    padding: 5px 10px;
+}
+
+@media screen and (max-width: 1170px) {
+    header nav input[type="text"], header nav button {
+        display: none;
+    }
+}

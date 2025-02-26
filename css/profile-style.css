@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: #eeeeee;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+hr{
+    margin: 20px 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #2980b9;
+}
+
+header {
+    background-color: deepskyblue;
+    border-bottom: 5px solid #2980b9;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+header nav, header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    padding: 20px 10px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+
+}
+
+header nav ul li a:hover {
+    border-bottom: 3px solid #2980b9;
+    color: #2980b9;
+}
+
+header nav h1 a{
+    color: #2980b9;
+    font-family: "Bungee", sans-serif;
+    font-size: 22px;
+}
+
+header nav h1 {
+    line-height: 3;
+    font-size: 1rem;
+}
+
+header nav input[type="text"] {
+    width: 280px;
+    height: 40px;
+    padding-left: 5px;
+}
+
+header nav button {
+    height: 40px;
+    margin-top: 13px;
+    width: 40px;
+    background-color: #eeeeee;
+    border: 0;
+    cursor: pointer;
+}
+
+.nav-bar {
+    background-color: deepskyblue;
+    width: 29%;
+    max-width: 250px;
+    height: 100vh;
+    border-right: 5px solid #2980b9;
+    text-align: center;
+    color: white;
+    float: left;
+    position: fixed;
+    top: 85px;
+    bottom: 0;
+}
+
+.nav-bar img {
+    border-radius: 50%;
+    border: 5px solid #2980b9;
+    margin: 20px 0;
+}
+
+.nav-bar .navbar-post-num {
+    background-color: #2980b9;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.nav-bar .navbar-post-num span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.nav-bar button {
+    display: block;
+    margin: 10px auto;
+    width: 150px;
+    height: 35px;
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-bar .add-friend-btn {
+    background-color: #32C432;
+}
+
+.nav-bar .post-btn {
+    background-color: #4D1AFF;
+}
+
+.tablist {
+    float: left;
+    width: 69%;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: calc(250px + 2%);
+    margin-top: 105px;
+    box-shadow: 4px 4px #dedcdc;
+}
+
+#nav-tab, #nav-tabContent {
+    margin: 20px;
+}
+
+#nav-tabContent .post .post-name-content-date img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#nav-tabContent .post .post-name-content-date:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.post .post-comments-likes form input[type='submit'] {
+    background: none;
+    border: none;
+    color: deepskyblue;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1170px) {
+    header nav input[type="text"], header nav button {
+        display: none;
+    }
+}
